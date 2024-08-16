@@ -1,4 +1,3 @@
-## Base image for all the stages
 FROM node:20-alpine AS base
 
 ARG USE_CN_MIRROR
