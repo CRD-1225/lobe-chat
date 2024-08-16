@@ -27,7 +27,8 @@ export const SELF_HOSTING_DOCUMENTS = urlJoin(DOCUMENTS, '/self-hosting');
 export const WEBRTC_SYNC_DOCUMENTS = urlJoin(SELF_HOSTING_DOCUMENTS, '/advanced/webrtc');
 
 // use this for the link
-export const DOCUMENTS_REFER_URL = `${DOCUMENTS}?utm_source=${UTM_SOURCE}`;
+//export const DOCUMENTS_REFER_URL = `${DOCUMENTS}?utm_source=${UTM_SOURCE}`;
+export const DOCUMENTS_REFER_URL = `https://www.yuque.com/crd125/mip8xl/ggorvq2chkcuvgbn?singleDoc# 《Tsui-Chat使用文档》`;
 
 export const WIKI = urlJoin(GITHUB, 'wiki');
 export const WIKI_PLUGIN_GUIDE = urlJoin(USAGE_DOCUMENTS, '/plugins/development');

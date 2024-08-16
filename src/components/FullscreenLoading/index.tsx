@@ -8,7 +8,7 @@ const FullscreenLoading = memo<{ title?: string }>(({ title }) => {
   return (
     <Flexbox height={'100%'} style={{ userSelect: 'none' }} width={'100%'}>
       <Center flex={1} gap={12} width={'100%'}>
-        <LobeChat size={48} type={'combine'} />
+        <LobeChat size={48} type={'3d'} />
         <Center gap={16} horizontal>
           <Icon icon={Loader2} spin />
           {title}

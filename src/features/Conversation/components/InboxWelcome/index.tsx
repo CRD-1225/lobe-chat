@@ -10,7 +10,6 @@ import { useGreeting } from '@/hooks/useGreeting';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
 
 import AgentsSuggest from './AgentsSuggest';
-import QuestionSuggest from './QuestionSuggest';
 
 const useStyles = createStyles(({ css, responsive }) => ({
   container: css`
@@ -57,7 +56,7 @@ const InboxWelcome = memo(() => {
         {showWelcomeSuggest && (
           <>
             <AgentsSuggest mobile={mobile} />
-            <QuestionSuggest mobile={mobile} />
+            {/* <QuestionSuggest mobile={mobile} /> */}
           </>
         )}
       </Flexbox>

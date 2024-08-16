@@ -1,7 +1,6 @@
 'use client';
 
 import { ActionIcon } from '@lobehub/ui';
-import { LobeChat } from '@lobehub/ui/brand';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
 import { memo } from 'react';
@@ -38,7 +37,7 @@ const Header = memo(() => {
     <Flexbox className={styles.top} gap={16} padding={16}>
       <Flexbox distribution={'space-between'} horizontal>
         <Flexbox align={'center'} gap={4} horizontal>
-          <LobeChat className={styles.logo} size={36} type={'text'} />
+          {/* <LobeChat className={styles.logo} size={36} type={'3d'} /> */}
           {enableWebrtc && <SyncStatusTag />}
         </Flexbox>
         {showCreateSession && (
