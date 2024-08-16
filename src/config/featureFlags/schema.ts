@@ -44,7 +44,7 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
   check_updates: true,
   welcome_suggest: true,
 
-  clerk_sign_up: true,
+  clerk_sign_up: false,
 
   cloud_promotion: false,
 

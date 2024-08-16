@@ -101,10 +101,10 @@ export const useAppearance = () => {
     baseTheme: isDarkMode ? dark : undefined,
     elements: styles,
     layout: {
-      helpPageUrl: 'https://lobehub.com/docs',
-      privacyPageUrl: 'https://lobehub.com/privacy',
+      helpPageUrl: 'https://chat.tsui-space.com/help',
+      privacyPageUrl: 'https://chat.tsui-space.com/privacy',
       socialButtonsVariant: 'blockButton',
-      termsPageUrl: 'https://lobehub.com/terms',
+      termsPageUrl: 'https://chat.tsui-space.com/terms',
     },
     variables: {
       borderRadius: `${theme.borderRadius}px`,
