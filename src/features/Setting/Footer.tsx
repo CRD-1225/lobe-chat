@@ -3,7 +3,6 @@
 import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { MessageSquareHeart } from 'lucide-react';
-import Link from 'next/link';
 import { PropsWithChildren, memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
@@ -38,7 +37,7 @@ const Footer = memo<PropsWithChildren>(() => {
         >
           <div style={{ textAlign: 'center' }}>
             <Icon icon={MessageSquareHeart} /> {`${t('footer.title')} `}
-            <Link
+            {/* <Link
               aria-label={'star'}
               href={GITHUB}
               onClick={(e) => {
@@ -59,7 +58,7 @@ const Footer = memo<PropsWithChildren>(() => {
             >
               {t('footer.action.feedback')}
             </Link>
-            {' !'}
+            {' !'} */}
           </div>
         </Center>
       </Flexbox>

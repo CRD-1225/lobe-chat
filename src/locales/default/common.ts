@@ -62,7 +62,7 @@ export default {
       desc: '如果您喜爱我们的产品，并希望支持我们，可以去 GitHub 给我们点一颗星吗？这个小小的动作对我们来说意义重大，能激励我们为您持续提供特性体验。',
       title: '在 GitHub 为我们点亮星标',
     },
-    title: '喜欢我们的产品？',
+    title: '如果你看到了，应该就是看到了。',
   },
   fullscreen: '全屏模式',
   historyRange: '历史范围',

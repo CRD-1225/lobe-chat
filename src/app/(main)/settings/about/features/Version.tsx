@@ -1,4 +1,4 @@
-import { Button, Tag } from 'antd';
+import { Tag } from 'antd';
 import { createStyles } from 'antd-style';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 
-import { MANUAL_UPGRADE_URL, OFFICIAL_SITE, RELEASES_URL } from '@/const/url';
+import { OFFICIAL_SITE } from '@/const/url';
 import { CURRENT_VERSION } from '@/const/version';
 import { useNewVersion } from '@/features/User/UserPanel/useNewVersion';
 import { useGlobalStore } from '@/store/global';
@@ -41,7 +41,7 @@ const Version = memo<{ mobile?: boolean }>(({ mobile }) => {
           </Center>
         </Link>
         <Flexbox>
-          <div style={{ fontSize: 18, fontWeight: 'bolder' }}>LobeChat</div>
+          <div style={{ fontSize: 18, fontWeight: 'bolder' }}>TsuiChat</div>
           <div>
             <Tag color={theme.colorFillSecondary} style={{ color: theme.colorTextSecondary }}>
               v{CURRENT_VERSION}
@@ -60,7 +60,7 @@ const Version = memo<{ mobile?: boolean }>(({ mobile }) => {
           </div>
         </Flexbox>
       </Flexbox>
-      <Flexbox flex={mobile ? 1 : undefined} gap={8} horizontal>
+      {/* <Flexbox flex={mobile ? 1 : undefined} gap={8} horizontal>
         <Link href={RELEASES_URL} style={{ flex: 1 }} target={'_blank'}>
           <Button block={mobile}>{t('changelog')}</Button>
         </Link>
@@ -71,7 +71,7 @@ const Version = memo<{ mobile?: boolean }>(({ mobile }) => {
             </Button>
           </Link>
         )}
-      </Flexbox>
+      </Flexbox> */}
     </Flexbox>
   );
 });
