@@ -22,7 +22,7 @@ import { useOpenSettings } from '@/hooks/useInterceptingRoutes';
 import { usePWAInstall } from '@/hooks/usePWAInstall';
 import { useQueryRoute } from '@/hooks/useQueryRoute';
 import { configService } from '@/services/config';
-import { SettingsTabs } from '@/store/global/initialState';
+import { SettingsTabs, SubscriptionTabs } from '@/store/global/initialState';
 import { useUserStore } from '@/store/user';
 import { authSelectors } from '@/store/user/selectors';
 
@@ -97,7 +97,19 @@ export const useMenu = () => {
   ];
 
   /* ↓ cloud slot ↓ */
-
+  const subscription: MenuProps['items'] = [
+    {
+      icon: <Icon icon={Download} />,
+      key: 'subscription',
+      label: t('userPanel.plans'),
+      onClick: () => {
+        router.push(urlJoin('/subscription', SubscriptionTabs.Plans));
+      },
+    },
+    {
+      type: 'divider',
+    },
+  ];
   /* ↑ cloud slot ↑ */
 
   const pwa: MenuProps['items'] = [
@@ -222,7 +234,7 @@ export const useMenu = () => {
     ...(isLogin ? settings : []),
     ...(isLoginWithClerk ? profile : []),
     /* ↓ cloud slot ↓ */
-
+    ...subscription,
     /* ↑ cloud slot ↑ */
     ...(canInstall ? pwa : []),
     ...data,

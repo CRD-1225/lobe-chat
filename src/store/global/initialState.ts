@@ -30,6 +30,13 @@ export enum SettingsTabs {
   TTS = 'tts',
 }
 
+export enum SubscriptionTabs {
+  Billing = 'billing',
+  Plans = 'plans',
+  Spend = 'spend',
+  Usage = 'usage',
+}
+
 export interface SystemStatus {
   // which sessionGroup should expand
   expandSessionGroupKeys: string[];

@@ -29,7 +29,7 @@ const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(({ style, ...rest })
       style={{ color: theme.colorTextDescription, fontSize: 12, ...style }}
       {...rest}
     >
-      <span>Powered by</span>
+      <span>Ryder·Tsui</span>
       <Link
         className={styles.logoLink}
         href={`https://lobehub.com?utm_source=${UTM_SOURCE}&utm_content=brand_watermark`}

@@ -12,6 +12,7 @@ import modelProvider from './modelProvider';
 import plugin from './plugin';
 import portal from './portal';
 import setting from './setting';
+import subscription from './subscription';
 import welcome from './welcome';
 
 const resources = {
@@ -28,6 +29,7 @@ const resources = {
   plugin,
   portal,
   setting,
+  subscription,
   tool,
   welcome,
 } as const;
