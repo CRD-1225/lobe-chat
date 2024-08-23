@@ -16,7 +16,7 @@ export default {
   fetchErrorDetail: '错误详情',
   notFound: {
     backHome: '返回首页',
-    desc: '我们找不到你正在寻找的页面，请检查链接是否正确',
+    desc: '你说幸福有链接，我打开一看是404 NotFound。请检查链接是否正确',
     title: '进入了未知领域？',
   },
   pluginSettings: {
@@ -99,7 +99,7 @@ export default {
     OllamaServiceUnavailable:
       'Ollama 服务连接失败，请检查 Ollama 是否运行正常，或是否正确设置 Ollama 的跨域配置',
 
-    AgentRuntimeError: 'Lobe AI Runtime 执行出错，请根据以下信息排查或重试',
+    AgentRuntimeError: 'AI Runtime 执行出错，请根据以下信息排查或重试',
 
     // cloud
     FreePlanLimit: '当前为免费用户，无法使用该功能，请升级到付费计划后继续使用',
@@ -141,7 +141,7 @@ export default {
   upload: {
     desc: '详情: {{detail}}',
     fileOnlySupportInServerMode:
-      '当前部署模式不支持上传非图片文件，如需上传 {{ext}} 格式，请切换到服务端数据库部署或使用 LobeChat Cloud 服务',
+      '当前部署模式不支持上传非图片文件，如需上传 {{ext}} 格式，请切换到服务端数据库部署',
     networkError: '请确认你的网络是否正常，并检查文件存储服务跨域配置是否正确',
     title: '文件上传失败，请检查网络连接或稍后再试',
     unknownError: '错误原因: {{reason}}',

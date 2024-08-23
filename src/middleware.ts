@@ -17,6 +17,7 @@ export const config = {
     '/files(.*)',
     '/repos(.*)',
     // ↓ cloud ↓
+    '/subscription(.*)',
   ],
 };
 
@@ -50,6 +51,7 @@ const isProtectedRoute = createRouteMatcher([
   '/settings(.*)',
   '/files(.*)',
   // ↓ cloud ↓
+  '/subscription(.*)',
 ]);
 
 export default authEnv.NEXT_PUBLIC_ENABLE_CLERK_AUTH
