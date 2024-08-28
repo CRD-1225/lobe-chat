@@ -1,15 +1,13 @@
 'use client';
 
-import { Tag } from 'antd';
 import { useResponsive } from 'antd-style';
 import { memo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import SettingContainer from '@/features/Setting//SettingContainer';
-import Footer from '@/features/Setting/Footer';
-import { useActiveSettingsKey } from '@/hooks/useActiveSettingsKey';
-import { SettingsTabs } from '@/store/global/initialState';
+import Footer from '@/features/Subscription/Footer';
+import SubscriptionContainer from '@/features/Subscription/SubscriptionContainer';
+import { useActiveSubscriptionKey } from '@/hooks/useActiveSubscriptionKey';
 
 import { LayoutProps } from '../type';
 import Header from './Header';
@@ -18,8 +16,8 @@ import SideBar from './SideBar';
 const Layout = memo<LayoutProps>(({ children, category }) => {
   const ref = useRef<any>(null);
   const { md = true } = useResponsive();
-  const { t } = useTranslation('setting');
-  const activeKey = useActiveSettingsKey();
+  const { t } = useTranslation('subscription');
+  const activeKey = useActiveSubscriptionKey();
 
   return (
     <Flexbox
@@ -32,23 +30,15 @@ const Layout = memo<LayoutProps>(({ children, category }) => {
       {md ? (
         <SideBar>{category}</SideBar>
       ) : (
-        <Header
-          getContainer={() => ref.current}
-          title={
-            <>
-              {t(`tab.${activeKey}`)}
-              {activeKey === SettingsTabs.Sync && <Tag color={'gold'}>{t('tab.experiment')}</Tag>}
-            </>
-          }
-        >
+        <Header getContainer={() => ref.current} title={<>{t(`tab.${activeKey}`)}</>}>
           {category}
         </Header>
       )}
-      <SettingContainer addonAfter={<Footer />}>{children}</SettingContainer>
+      <SubscriptionContainer addonAfter={<Footer />}>{children}</SubscriptionContainer>
     </Flexbox>
   );
 });
 
-Layout.displayName = 'DesktopSettingsLayout';
+Layout.displayName = 'DesktopSubscriptionLayout';
 
 export default Layout;

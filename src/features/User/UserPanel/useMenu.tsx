@@ -4,6 +4,7 @@ import { ItemType } from 'antd/es/menu/interface';
 import {
   CircleUserRound,
   Download,
+  Handshake,
   HardDriveDownload,
   HardDriveUpload,
   LogOut,
@@ -99,7 +100,7 @@ export const useMenu = () => {
   /* ↓ cloud slot ↓ */
   const subscription: MenuProps['items'] = [
     {
-      icon: <Icon icon={Download} />,
+      icon: <Icon icon={Handshake} />,
       key: 'subscription',
       label: t('userPanel.plans'),
       onClick: () => {

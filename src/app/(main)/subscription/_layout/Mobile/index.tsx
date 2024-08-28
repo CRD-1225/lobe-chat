@@ -1,5 +1,5 @@
 import MobileContentLayout from '@/components/server/MobileNavLayout';
-import Footer from '@/features/Setting/Footer';
+import Footer from '@/features/Subscription/Footer';
 
 import { LayoutProps } from '../type';
 import Header from './Header';
@@ -13,6 +13,6 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-Layout.displayName = 'MobileSettingsLayout';
+Layout.displayName = 'MobileSubscriptionLayout';
 
 export default Layout;
