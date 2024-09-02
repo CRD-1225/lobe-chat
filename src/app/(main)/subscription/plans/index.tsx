@@ -1,14 +1,8 @@
 // import History from './features/History';
-// import Summary from './features/Summary';
+import PricingTable from './features/PricingTable';
 
 const Page = () => {
-  return (
-    <>
-      tests
-      {/* <Summary />
-      <History /> */}
-    </>
-  );
+  return <PricingTable />;
 };
 
 Page.displayName = 'Plans';
