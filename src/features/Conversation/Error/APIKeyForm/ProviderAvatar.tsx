@@ -16,7 +16,6 @@ import {
   Stepfun,
   Together,
   Tongyi,
-  Upstage,
   ZeroOne,
   Zhipu,
 } from '@lobehub/icons';
@@ -104,9 +103,9 @@ const ProviderAvatar = memo<ProviderAvatarProps>(({ provider }) => {
       return <Ai360 color={Ai360.colorPrimary} size={56} />;
     }
 
-    case ModelProvider.Upstage: {
-      return <Upstage color={Upstage.colorPrimary} size={56} />;
-    }
+    // case ModelProvider.Upstage: {
+    //   return <Upstage color={Upstage.colorPrimary} size={56} />;
+    // }
 
     default:
     case ModelProvider.OpenAI: {
