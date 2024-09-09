@@ -4,7 +4,8 @@ import { ModelProviderCard } from '@/types/llm';
 const Qwen: ModelProviderCard = {
   chatModels: [
     {
-      description: '通义千问超大规模语言模型，支持长文本上下文，以及基于长文档、多文档等多个场景的对话功能。',
+      description:
+        '通义千问超大规模语言模型，支持长文本上下文，以及基于长文档、多文档等多个场景的对话功能。',
       displayName: 'Qwen Long',
       enabled: true,
       id: 'qwen-long',
@@ -58,15 +59,6 @@ const Qwen: ModelProviderCard = {
       displayName: 'Qwen VL Max',
       enabled: true,
       id: 'qwen-vl-max',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      description:
-        '抢先体验即将升级的 qwen-vl-max 大模型。',
-      displayName: 'Qwen VL Max 0809',
-      enabled: true,
-      id: 'qwen-vl-max-0809',
       tokens: 32_768,
       vision: true,
     },
@@ -79,7 +71,7 @@ const Qwen: ModelProviderCard = {
     },
     {
       description: '通义千问2对外开源的57B规模14B激活参数的MOE模型',
-      displayName: 'Qwen2 57B-A14B MoE',
+      displayName: 'Qwen2 57B A14B MoE',
       id: 'qwen2-57b-a14b-instruct',
       tokens: 65_536, // https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct
     },
@@ -96,16 +88,14 @@ const Qwen: ModelProviderCard = {
       tokens: 4096, // https://help.aliyun.com/zh/dashscope/developer-reference/use-qwen2-math-by-calling-api
     },
     {
-      description:
-        '以 Qwen-7B 语言模型初始化，添加图像模型，图像输入分辨率为448的预训练模型。',
+      description: '以 Qwen-7B 语言模型初始化，添加图像模型，图像输入分辨率为448的预训练模型。',
       displayName: 'Qwen VL',
       id: 'qwen-vl-v1',
       tokens: 8192, // https://huggingface.co/Qwen/Qwen-VL/blob/main/config.json
       vision: true,
     },
     {
-      description:
-        '通义千问VL支持灵活的交互方式，包括多图、多轮问答、创作等能力的模型。',
+      description: '通义千问VL支持灵活的交互方式，包括多图、多轮问答、创作等能力的模型。',
       displayName: 'Qwen VL Chat',
       id: 'qwen-vl-chat-v1',
       tokens: 8192, // https://huggingface.co/Qwen/Qwen-VL-Chat/blob/main/config.json

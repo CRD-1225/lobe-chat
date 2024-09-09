@@ -4,6 +4,10 @@ import { ChatHeader } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
 
+import { ProductLogo } from '@/components/Branding';
+
+import ShareAgentButton from '../../features/ShareAgentButton';
+
 export const useStyles = createStyles(({ css, token }) => ({
   logo: css`
     color: ${token.colorText};
@@ -12,12 +16,12 @@ export const useStyles = createStyles(({ css, token }) => ({
 }));
 
 const Header = memo(() => {
-  //const { styles } = useStyles();
+  const { styles } = useStyles();
 
   return (
     <ChatHeader
-    // left={<LobeChat className={styles.logo} extra={'Discover'} size={36} type={'text'} />}
-    // right={<ShareAgentButton />}
+      left={<ProductLogo className={styles.logo} extra={'Discover'} size={36} />}
+      right={<ShareAgentButton />}
     />
   );
 });

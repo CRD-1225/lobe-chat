@@ -9,7 +9,8 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 
 import FeatureList from '@/components/FeatureList';
-import { DATABASE_SELF_HOSTING_URL } from '@/const/url';
+import { LOBE_CHAT_CLOUD } from '@/const/branding';
+import { DATABASE_SELF_HOSTING_URL, OFFICIAL_URL, UTM_SOURCE } from '@/const/url';
 
 const BLOCK_SIZE = 100;
 const ICON_SIZE = 72;
@@ -131,7 +132,13 @@ const NotSupportClient = () => {
         <Typography.Text type={'secondary'}>
           <Trans i18nKey={'notSupportGuide.desc'} ns={'file'}>
             当前部署实例为客户端数据库模式，无法使用文件管理功能。请切换到
-            <Link href={DATABASE_SELF_HOSTING_URL}>服务端数据库部署模式。</Link>
+            <Link href={DATABASE_SELF_HOSTING_URL}>服务端数据库部署模式</Link>
+            ，或直接使用官方的
+            <Link
+              href={`${OFFICIAL_URL}?utm_source=${UTM_SOURCE}&utm_medium=client_not_support_file`}
+            >
+              {LOBE_CHAT_CLOUD}
+            </Link>
           </Trans>
         </Typography.Text>
       </Flexbox>

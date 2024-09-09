@@ -2,6 +2,232 @@
 
 # Changelog
 
+### [Version 1.15.23](https://github.com/lobehub/lobe-chat/compare/v1.15.22...v1.15.23)
+
+<sup>Released on **2024-09-08**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Improve branding implement.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Improve branding implement, closes [#3832](https://github.com/lobehub/lobe-chat/issues/3832) ([b5e6b8b](https://github.com/lobehub/lobe-chat/commit/b5e6b8b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.22](https://github.com/lobehub/lobe-chat/compare/v1.15.21...v1.15.22)
+
+<sup>Released on **2024-09-08**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update model display name & Remove Qwen preview model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update model display name & Remove Qwen preview model, closes [#3757](https://github.com/lobehub/lobe-chat/issues/3757) ([dd439ba](https://github.com/lobehub/lobe-chat/commit/dd439ba))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.21](https://github.com/lobehub/lobe-chat/compare/v1.15.20...v1.15.21)
+
+<sup>Released on **2024-09-08**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Temperature range from 0 to 2.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Temperature range from 0 to 2, closes [#3355](https://github.com/lobehub/lobe-chat/issues/3355) ([4a9114e](https://github.com/lobehub/lobe-chat/commit/4a9114e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.20](https://github.com/lobehub/lobe-chat/compare/v1.15.19...v1.15.20)
+
+<sup>Released on **2024-09-08**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.19](https://github.com/lobehub/lobe-chat/compare/v1.15.18...v1.15.19)
+
+<sup>Released on **2024-09-08**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.18](https://github.com/lobehub/lobe-chat/compare/v1.15.17...v1.15.18)
+
+<sup>Released on **2024-09-06**</sup>
+
+#### 💄 Styles
+
+- **misc**: Support anthropic browser request.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Support anthropic browser request, closes [#3798](https://github.com/lobehub/lobe-chat/issues/3798) ([743df51](https://github.com/lobehub/lobe-chat/commit/743df51))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.17](https://github.com/lobehub/lobe-chat/compare/v1.15.16...v1.15.17)
+
+<sup>Released on **2024-09-06**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix auth log.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix auth log, closes [#3795](https://github.com/lobehub/lobe-chat/issues/3795) ([71aa405](https://github.com/lobehub/lobe-chat/commit/71aa405))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.16](https://github.com/lobehub/lobe-chat/compare/v1.15.15...v1.15.16)
+
+<sup>Released on **2024-09-06**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update Bedrock model list & add `AWS_BEDROCK_MODEL_LIST` support.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update Bedrock model list & add `AWS_BEDROCK_MODEL_LIST` support, closes [#3723](https://github.com/lobehub/lobe-chat/issues/3723) ([0aad972](https://github.com/lobehub/lobe-chat/commit/0aad972))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.15](https://github.com/lobehub/lobe-chat/compare/v1.15.14...v1.15.15)
+
+<sup>Released on **2024-09-06**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add `LLaVA 1.5 7B` model in Groq.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add `LLaVA 1.5 7B` model in Groq, closes [#3769](https://github.com/lobehub/lobe-chat/issues/3769) ([f78a0b1](https://github.com/lobehub/lobe-chat/commit/f78a0b1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.15.14](https://github.com/lobehub/lobe-chat/compare/v1.15.13...v1.15.14)
+
+<sup>Released on **2024-09-06**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.15.13](https://github.com/lobehub/lobe-chat/compare/v1.15.12...v1.15.13)
 
 <sup>Released on **2024-09-06**</sup>

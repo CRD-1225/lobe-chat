@@ -37,7 +37,7 @@ const Header = memo(() => {
     <Flexbox className={styles.top} gap={16} padding={16}>
       <Flexbox distribution={'space-between'} horizontal>
         <Flexbox align={'center'} gap={4} horizontal>
-          {/* <LobeChat className={styles.logo} size={36} type={'3d'} /> */}
+          {/* <ProductLogo className={styles.logo} size={36} /> */}
           {enableWebrtc && <SyncStatusTag />}
         </Flexbox>
         {showCreateSession && (

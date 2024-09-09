@@ -7,6 +7,9 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
+import { BRANDING_NAME } from '@/const/branding';
+
+
 import { useServerConfigStore } from '@/store/serverConfig';
 import { serverConfigSelectors } from '@/store/serverConfig/selectors';
 
@@ -28,7 +31,11 @@ const Page = memo<{ mobile?: boolean }>(({ mobile }) => {
 
   return (
     <>
-      <Form.Group style={{ width: '100%' }} title={`${t('about')} TsuiChat`} variant={'pure'}>
+      <Form.Group
+        style={{ width: '100%' }}
+        title={`${t('about')} ${BRANDING_NAME}`}
+        variant={'pure'}
+      >
         <Flexbox gap={20} paddingBlock={20} width={'100%'}>
           <div className={styles.title}>{t('version')}</div>
           <Version mobile={mobile} />
