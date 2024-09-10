@@ -3,6 +3,7 @@
 import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { MessageSquareHeart } from 'lucide-react';
+import Link from 'next/link';
 import { PropsWithChildren, memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
@@ -11,6 +12,7 @@ import GuideModal from '@/components/GuideModal';
 import GuideVideo from '@/components/GuideVideo';
 import { BRANDING_NAME } from '@/const/branding';
 import { GITHUB, GITHUB_ISSUES } from '@/const/url';
+import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
 import { isOnServerSide } from '@/utils/env';
 
 const useStyles = createStyles(
@@ -25,7 +27,10 @@ const Footer = memo<PropsWithChildren>(() => {
   const [openStar, setOpenStar] = useState(false);
   const [openFeedback, setOpenFeedback] = useState(false);
   const { styles } = useStyles();
-  return (
+
+  const { hideGitHub } = useServerConfigStore(featureFlagsSelectors);
+
+  return hideGitHub ? null : (
     <>
       <Flexbox flex={1} justify={'flex-end'}>
         <Center
@@ -38,7 +43,7 @@ const Footer = memo<PropsWithChildren>(() => {
         >
           <div style={{ textAlign: 'center' }}>
             <Icon icon={MessageSquareHeart} /> {`${t('footer.title')} `}
-            {/* <Link
+            <Link
               aria-label={'star'}
               href={GITHUB}
               onClick={(e) => {
@@ -59,7 +64,7 @@ const Footer = memo<PropsWithChildren>(() => {
             >
               {t('footer.action.feedback')}
             </Link>
-            {' !'} */}
+            {' !'}
           </div>
         </Center>
       </Flexbox>

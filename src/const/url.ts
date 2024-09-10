@@ -64,7 +64,7 @@ export const imageUrl = (filename: string) => withBasePath(`/images/${filename}`
 
 export const LOBE_URL_IMPORT_NAME = 'settings';
 export const EMAIL_SUPPORT = 'support@tsuihub.com';
-export const EMAIL_BUSINESS = 'hello@tsuihub.com';
+export const EMAIL_BUSINESS = 'business@tsuihub.com';
 
 export const MEDIDUM = 'https://medium.com/@lobehub';
 export const X = 'https://x.com/lobehub';

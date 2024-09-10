@@ -8,12 +8,20 @@ import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import { BRANDING_NAME } from '@/const/branding';
-
-
+import {
+  EMAIL_BUSINESS,
+  EMAIL_SUPPORT,
+  OFFICIAL_SITE,
+  PRIVACY_URL,
+  TERMS_URL,
+  mailTo,
+} from '@/const/url';
 import { useServerConfigStore } from '@/store/serverConfig';
 import { serverConfigSelectors } from '@/store/serverConfig/selectors';
 
+import AboutList from './features/AboutList';
 import Analytics from './features/Analytics';
+import ItemLink from './features/ItemLink';
 import Version from './features/Version';
 
 const useStyles = createStyles(({ css, token }) => ({
@@ -40,7 +48,7 @@ const Page = memo<{ mobile?: boolean }>(({ mobile }) => {
           <div className={styles.title}>{t('version')}</div>
           <Version mobile={mobile} />
           <Divider style={{ marginBlock: 0 }} />
-          {/* <div className={styles.title}>{t('contact')}</div>
+          <div className={styles.title}>{t('contact')}</div>
           <AboutList
             ItemRender={ItemLink}
             items={[
@@ -62,7 +70,7 @@ const Page = memo<{ mobile?: boolean }>(({ mobile }) => {
             ]}
           />
           <Divider style={{ marginBlock: 0 }} />
-          <div className={styles.title}>{t('information')}</div>
+          {/* <div className={styles.title}>{t('information')}</div>
           <AboutList
             ItemRender={ItemCard}
             grid
@@ -100,7 +108,7 @@ const Page = memo<{ mobile?: boolean }>(({ mobile }) => {
               },
             ]}
           />
-          <Divider style={{ marginBlock: 0 }} />
+          <Divider style={{ marginBlock: 0 }} /> */}
           <div className={styles.title}>{t('legal')}</div>
           <AboutList
             ItemRender={ItemLink}
@@ -116,7 +124,7 @@ const Page = memo<{ mobile?: boolean }>(({ mobile }) => {
                 value: 'privacy',
               },
             ]}
-          /> */}
+          />
         </Flexbox>
       </Form.Group>
       {enabledTelemetryChat && <Analytics />}
