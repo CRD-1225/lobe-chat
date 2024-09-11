@@ -4,7 +4,6 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import pkg from '@/../package.json';
 import { ProductLogo } from '@/components/Branding';
 import ChatList from '@/features/Conversation/components/ChatList';
 import { useAgentStore } from '@/store/agent';
@@ -64,7 +63,7 @@ const Preview = memo<FieldType & { title?: string }>(
             {withFooter ? (
               <Flexbox align={'center'} className={styles.footer} gap={4}>
                 <ProductLogo type={'combine'} />
-                <div className={styles.url}>{pkg.homepage}</div>
+                {/* <div className={styles.url}>{pkg.homepage}</div> */}
               </Flexbox>
             ) : (
               <div />
