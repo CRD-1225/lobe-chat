@@ -4,6 +4,8 @@
 # dependencies
 node_modules
 
+scripts
+
 # ci
 coverage
 .coverage
