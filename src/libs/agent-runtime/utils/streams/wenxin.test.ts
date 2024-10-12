@@ -2,8 +2,9 @@ import { describe, expect, it, vi } from 'vitest';
 
 import * as uuidModule from '@/utils/uuid';
 
+import { convertIterableToStream } from '../../utils/streams/protocol';
 import { ChatResp } from '../../wenxin/type';
-import { WenxinResultToStream, WenxinStream } from './wenxin';
+import { WenxinStream } from './wenxin';
 
 const dataStream = [
   {
@@ -95,7 +96,7 @@ describe('WenxinStream', () => {
       },
     };
 
-    const stream = WenxinResultToStream(mockWenxinStream);
+    const stream = convertIterableToStream(mockWenxinStream);
 
     const onStartMock = vi.fn();
     const onTextMock = vi.fn();
