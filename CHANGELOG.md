@@ -2,6 +2,123 @@
 
 # Changelog
 
+### [Version 1.22.19](https://github.com/lobehub/lobe-chat/compare/v1.22.18...v1.22.19)
+
+<sup>Released on **2024-10-22**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move responsive to server utils folder.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move responsive to server utils folder, closes [#4447](https://github.com/lobehub/lobe-chat/issues/4447) ([fe7fe64](https://github.com/lobehub/lobe-chat/commit/fe7fe64))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.22.18](https://github.com/lobehub/lobe-chat/compare/v1.22.17...v1.22.18)
+
+<sup>Released on **2024-10-22**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.22.17](https://github.com/lobehub/lobe-chat/compare/v1.22.16...v1.22.17)
+
+<sup>Released on **2024-10-22**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Fix dynamic import in rsc layout.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Fix dynamic import in rsc layout, closes [#4445](https://github.com/lobehub/lobe-chat/issues/4445) ([011d62a](https://github.com/lobehub/lobe-chat/commit/011d62a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.22.16](https://github.com/lobehub/lobe-chat/compare/v1.22.15...v1.22.16)
+
+<sup>Released on **2024-10-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix azure-ad.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix azure-ad, closes [#4438](https://github.com/lobehub/lobe-chat/issues/4438) ([8077317](https://github.com/lobehub/lobe-chat/commit/8077317))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.22.15](https://github.com/lobehub/lobe-chat/compare/v1.22.14...v1.22.15)
+
+<sup>Released on **2024-10-21**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Update format utils and shared layout.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Update format utils and shared layout, closes [#4431](https://github.com/lobehub/lobe-chat/issues/4431) ([56ed073](https://github.com/lobehub/lobe-chat/commit/56ed073))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.22.14](https://github.com/lobehub/lobe-chat/compare/v1.22.13...v1.22.14)
 
 <sup>Released on **2024-10-20**</sup>
