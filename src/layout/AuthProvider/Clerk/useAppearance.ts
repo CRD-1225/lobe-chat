@@ -4,6 +4,8 @@ import { dark } from '@clerk/themes';
 import { ElementsConfig, Theme } from '@clerk/types';
 import { createStyles, useThemeMode } from 'antd-style';
 
+import { BRANDING_URL } from '@/const/branding';
+
 const prefixCls = 'cl';
 
 export const useStyles = createStyles(
@@ -101,10 +103,10 @@ export const useAppearance = () => {
     baseTheme: isDarkMode ? dark : undefined,
     elements: styles,
     layout: {
-      helpPageUrl: 'https://chat.tsui-space.com/help',
-      privacyPageUrl: 'https://chat.tsui-space.com/privacy',
+      helpPageUrl: BRANDING_URL.help ?? 'https://chat.tsui-space.com/help',
+      privacyPageUrl: BRANDING_URL.privacy ?? 'https://chat.tsui-space.com/privacy',
       socialButtonsVariant: 'blockButton',
-      termsPageUrl: 'https://chat.tsui-space.com/terms',
+      termsPageUrl: BRANDING_URL.terms ?? 'https://chat.tsui-space.com/terms',
     },
     variables: {
       borderRadius: `${theme.borderRadius}px`,
