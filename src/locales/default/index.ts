@@ -1,4 +1,3 @@
-import tool from '../default/tool';
 import auth from './auth';
 import chat from './chat';
 import clerk from './clerk';
@@ -17,7 +16,8 @@ import portal from './portal';
 import providers from './providers';
 import ragEval from './ragEval';
 import setting from './setting';
-import subscription from './subscription';
+import tool from './tool';
+import topic from './topic';
 import welcome from './welcome';
 
 const resources = {
@@ -39,8 +39,8 @@ const resources = {
   providers,
   ragEval,
   setting,
-  subscription,
   tool,
+  topic,
   welcome,
 } as const;
 
