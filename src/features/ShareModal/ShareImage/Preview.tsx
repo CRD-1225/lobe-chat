@@ -12,6 +12,7 @@ import { agentSelectors } from '@/store/agent/selectors';
 import { useSessionStore } from '@/store/session';
 import { sessionMetaSelectors, sessionSelectors } from '@/store/session/selectors';
 
+import pkg from '../../../../package.json';
 import { useContainerStyles } from '../style';
 import { useStyles } from './style';
 import { FieldType } from './type';
@@ -65,7 +66,7 @@ const Preview = memo<FieldType & { title?: string }>(
             {withFooter ? (
               <Flexbox align={'center'} className={styles.footer} gap={4}>
                 <ProductLogo type={'combine'} />
-                {/* <div className={styles.url}>{pkg.homepage}</div> */}
+                <div className={styles.url}>{pkg.homepage}</div>
               </Flexbox>
             ) : (
               <div />
