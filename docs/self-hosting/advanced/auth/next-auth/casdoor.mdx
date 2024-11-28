@@ -33,7 +33,8 @@ If you are deploying using a public network, the following assumptions apply:
 - You privately deploy Casdoor, and its domain is `https://lobe-auth-api.example.com`.
 
 <Steps>
-  ### Create a Casdoor Application
+
+### Create a Casdoor Application
 
 Access your privately deployed Casdoor WebUI (default is `http://localhost:8000/`) to enter the console. The default account is `admin`, and the password is `123`.
 
@@ -50,7 +51,8 @@ There are also some optional fields that can enhance user experience:
 - Logo: `https://lobehub.com/icon-192x192.png`
 - Form CSS, Form CSS (Mobile):
 
-  ```css
+```html
+<style>
   .login-panel {
     padding: 40px 70px 0 70px;
     border-radius: 10px;
@@ -87,7 +89,8 @@ There are also some optional fields that can enhance user experience:
       box-shadow: none;
     }
   }
-  ```
+</style>
+```
 
 Then, copy the `Client ID` and `Client Secret` and save them.
 
@@ -112,13 +115,14 @@ When deploying LobeChat, you need to configure the following environment variabl
 | `AUTH_CASDOOR_ISSUER` | Required | The OpenID Connect issuer for the Casdoor provider. |
 | `NEXTAUTH_URL` | Required | This URL specifies the callback address for Auth.js during OAuth verification and needs to be set only if the default generated redirect address is incorrect. `https://lobe.example.com/api/auth` |
 
-  <Callout type={'tip'}>
-    Visit [📘 Environment Variables](/docs/self-hosting/environment-variables/auth#casdoor) for details on related variables.
-
+{' '}
+<Callout type={'tip'}>
+  Visit [📘 Environment Variables](/docs/self-hosting/environment-variables/auth#casdoor) for
+  details on related variables.
 </Callout>
+
 </Steps>
 
 <Callout type={'info'}>
   Once deployed successfully, users will be able to authenticate via Casdoor and use LobeChat.
 </Callout>
-```

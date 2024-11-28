@@ -6,9 +6,8 @@ import { enableNextAuth } from '@/const/auth';
 import { parseSystemAgent } from '@/server/globalConfig/parseSystemAgent';
 import { GlobalServerConfig } from '@/types/serverConfig';
 
+import { genServerLLMConfig } from './genServerLLMConfig';
 import { parseAgentConfig } from './parseDefaultAgent';
-
-import { genServerLLMConfig } from './genServerLLMConfig'
 
 export const getServerGlobalConfig = () => {
   const { ACCESS_CODES, DEFAULT_AGENT_CONFIG } = getAppConfig();
@@ -28,6 +27,10 @@ export const getServerGlobalConfig = () => {
       bedrock: {
         enabledKey: 'ENABLED_AWS_BEDROCK',
         modelListKey: 'AWS_BEDROCK_MODEL_LIST',
+      },
+      giteeai: {
+        enabledKey: 'ENABLED_GITEE_AI',
+        modelListKey: 'GITEE_AI_MODEL_LIST',
       },
       ollama: {
         fetchOnClient: !process.env.OLLAMA_PROXY_URL,

@@ -7,6 +7,7 @@ import {
   BaichuanProviderCard,
   DeepSeekProviderCard,
   FireworksAIProviderCard,
+  GiteeAIProviderCard,
   GoogleProviderCard,
   GroqProviderCard,
   HunyuanProviderCard,
@@ -37,8 +38,8 @@ import { useGithubProvider } from './Github';
 import { useHuggingFaceProvider } from './HuggingFace';
 import { useOllamaProvider } from './Ollama';
 import { useOpenAIProvider } from './OpenAI';
-import { useWenxinProvider } from './Wenxin';
 import { useSenseNovaProvider } from './SenseNova';
+import { useWenxinProvider } from './Wenxin';
 
 export const useProviderList = (): ProviderItem[] => {
   const AzureProvider = useAzureProvider();
@@ -88,6 +89,7 @@ export const useProviderList = (): ProviderItem[] => {
       TaichuProviderCard,
       InternLMProviderCard,
       SiliconCloudProviderCard,
+      GiteeAIProviderCard,
     ],
     [
       AzureProvider,

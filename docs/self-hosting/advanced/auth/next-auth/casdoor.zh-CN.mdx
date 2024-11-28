@@ -30,7 +30,8 @@ tags:
 - 你私有部署 Casdoor，其域名为 `https://lobe-auth-api.example.com`。
 
 <Steps>
-  ### 创建 Casdoor 应用
+
+### 创建 Casdoor 应用
 
 访问你私有部署的 Casdoor WebUI（默认为 `http://localhost:8000/`） 进入控制台，默认账号为 `admin`，密码为 `123`。
 
@@ -47,7 +48,8 @@ tags:
 - Logo：`https://lobehub.com/icon-192x192.png`
 - 表单 CSS、表单 CSS（移动端）：
 
-  ```css
+```html
+<style>
   .login-panel {
     padding: 40px 70px 0 70px;
     border-radius: 10px;
@@ -84,7 +86,8 @@ tags:
       box-shadow: none;
     }
   }
-  ```
+</style>
+```
 
 随后，复制 `客户端 ID` 和 `客户端密钥`，并保存。
 
@@ -111,7 +114,7 @@ tags:
 
   <Callout type={'tip'}>
     前往 [📘 环境变量](/zh/docs/self-hosting/environment-variables/auth#casdoor) 可查阅相关变量详情。
- 
+
 </Callout>
 </Steps>
 
