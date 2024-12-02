@@ -43,6 +43,12 @@ const getLlmOptionsFromPayload = (provider: string, payload: JWTPayload) => {
       return baseURL ? { apiKey, baseURL } : { apiKey };
     }
 
+    case ModelProvider.Ollama: {
+      const baseURL = payload?.endpoint || process.env.OLLAMA_PROXY_URL;
+
+      return { baseURL };
+    }
+
     case ModelProvider.Azure: {
       const { AZURE_API_KEY, AZURE_API_VERSION, AZURE_ENDPOINT } = llmConfig;
       const apikey = apiKeyManager.pick(payload?.apiKey || AZURE_API_KEY);

@@ -134,6 +134,7 @@ describe('initAgentRuntimeWithUserPayload method', () => {
       const runtime = await initAgentRuntimeWithUserPayload(ModelProvider.Ollama, jwtPayload);
       expect(runtime).toBeInstanceOf(AgentRuntime);
       expect(runtime['_runtime']).toBeInstanceOf(LobeOllamaAI);
+      expect(runtime['_runtime']['baseURL']).toEqual(jwtPayload.endpoint);
     });
 
     it('Perplexity AI provider: with apikey', async () => {
