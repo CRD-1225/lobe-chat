@@ -5,6 +5,17 @@ import { ModelProviderCard } from '@/types/llm';
 const Github: ModelProviderCard = {
   chatModels: [
     {
+      description:
+        '专注于高级推理和解决复杂问题，包括数学和科学任务。非常适合需要深入上下文理解和代理工作流程的应用程序。',
+      displayName: 'OpenAI o1',
+      enabled: true,
+      functionCall: false,
+      id: 'o1',
+      maxOutput: 100_000,
+      tokens: 200_000,
+      vision: true,
+    },
+    {
       description: '比 o1-preview 更小、更快，成本低80%，在代码生成和小上下文操作方面表现良好。',
       displayName: 'OpenAI o1-mini',
       enabled: true,
@@ -218,7 +229,7 @@ const Github: ModelProviderCard = {
   description: '通过GitHub模型，开发人员可以成为AI工程师，并使用行业领先的AI模型进行构建。',
   enabled: true,
   id: 'github',
-  // modelList: { showModelFetcher: true },
+  modelList: { showModelFetcher: true }, // I'm not sure if it is good to show the model fetcher, as remote list is not complete.
   name: 'GitHub',
   url: 'https://github.com/marketplace/models',
 };
