@@ -59,6 +59,7 @@ export interface SystemStatus {
   latestChangelogId?: string;
   mobileShowPortal?: boolean;
   mobileShowTopic?: boolean;
+  portalWidth: number;
   sessionsWidth: number;
   showChatSideBar?: boolean;
   showFilePanel?: boolean;
@@ -93,6 +94,7 @@ export const INITIAL_STATUS = {
   hideThreadLimitAlert: false,
   inputHeight: 200,
   mobileShowTopic: false,
+  portalWidth: 400,
   sessionsWidth: 320,
   showChatSideBar: true,
   showFilePanel: true,
