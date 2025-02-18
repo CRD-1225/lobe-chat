@@ -53,6 +53,8 @@ Since we support file-based conversations/knowledge base conversations, we need 
 
   For server-side database deployment scenarios, you need to set `NEXT_PUBLIC_SERVICE_MODE` to `server`.
 
+  {' '}
+
   <Callout type={'info'}>
     In the official `lobe-chat-database` Docker image, this environment variable is already set to
     `server` by default. Therefore, if you deploy using the Docker image, you do not need to configure
@@ -68,6 +70,8 @@ Since we support file-based conversations/knowledge base conversations, we need 
   ### `DATABASE_URL`
 
   The core of configuring the database is to add the `DATABASE_URL` environment variable and fill in the Postgres database connection URL you have prepared. The typical format of the database connection URL is `postgres://username:password@host:port/database`.
+
+  {' '}
 
   <Callout type={'info'}>
     If you want to enable SSL when connecting to the database, please refer to the
@@ -95,7 +99,7 @@ Since we support file-based conversations/knowledge base conversations, we need 
 
   <Callout type={'info'}>
     You can generate a random 32-character string as the value of `KEY_VAULTS_SECRET` using `openssl
-                                      rand -base64 32`.
+                                                      rand -base64 32`.
   </Callout>
 </Steps>
 
