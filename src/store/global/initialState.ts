@@ -27,8 +27,10 @@ export enum SettingsTabs {
   About = 'about',
   Agent = 'agent',
   Common = 'common',
+  Hotkey = 'hotkey',
   LLM = 'llm',
   Provider = 'provider',
+  Storage = 'storage',
   Sync = 'sync',
   SystemAgent = 'system-agent',
   TTS = 'tts',
@@ -67,6 +69,7 @@ export interface SystemStatus {
   sessionsWidth: number;
   showChatSideBar?: boolean;
   showFilePanel?: boolean;
+  showHotkeyHelper?: boolean;
   showSessionPanel?: boolean;
   showSystemRole?: boolean;
   /**
@@ -111,6 +114,7 @@ export const INITIAL_STATUS = {
   sessionsWidth: 320,
   showChatSideBar: true,
   showFilePanel: true,
+  showHotkeyHelper: false,
   showSessionPanel: true,
   showSystemRole: false,
   themeMode: 'auto',
