@@ -80,6 +80,15 @@ export class LobeOllamaAI implements LobeRuntimeAI {
         name: string;
         status_code: number;
       };
+      if (e.message === 'fetch failed') {
+        throw AgentRuntimeError.chat({
+          error: {
+            message: 'please check whether your ollama service is available',
+          },
+          errorType: AgentRuntimeErrorType.OllamaServiceUnavailable,
+          provider: ModelProvider.Ollama,
+        });
+      }
 
       throw AgentRuntimeError.chat({
         error: {

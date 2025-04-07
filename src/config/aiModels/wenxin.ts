@@ -1,11 +1,9 @@
 import { AIChatModelCard } from '@/types/aiModel';
 
 const wenxinChatModels: AIChatModelCard[] = [
-  /*
   {
     abilities: {
-      resoning: true,
-      search: true,
+      reasoning: true,
     },
     contextWindowTokens: 32_768,
     description:
@@ -19,12 +17,8 @@ const wenxinChatModels: AIChatModelCard[] = [
       output: 8,
     },
     releasedAt: '2025-03-16',
-    settings: {
-      searchImpl: 'params',
-    },
     type: 'chat',
   },
-  */
   {
     abilities: {
       search: true,
@@ -349,8 +343,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Qwen-1.5B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Qwen-1.5B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Qwen 1.5B',
     id: 'deepseek-r1-distill-qwen-1.5b',
     pricing: {
@@ -365,8 +358,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Qwen-7B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Qwen-7B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Qwen 7B',
     id: 'deepseek-r1-distill-qwen-7b',
     pricing: {
@@ -381,8 +373,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Qwen-14B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Qwen-14B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Qwen 14B',
     id: 'deepseek-r1-distill-qwen-14b',
     pricing: {
@@ -397,8 +388,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Qwen-32B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Qwen-32B是DeepSeek-R1基于Qwen-2.5系列的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Qwen 32B',
     id: 'deepseek-r1-distill-qwen-32b',
     pricing: {
@@ -413,8 +403,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Llama-8B是DeepSeek-R1基于Llama3.1-8B-Base的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Llama-8B是DeepSeek-R1基于Llama3.1-8B-Base的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Llama 8B',
     id: 'deepseek-r1-distill-llama-8b',
     pricing: {
@@ -429,8 +418,7 @@ const wenxinChatModels: AIChatModelCard[] = [
       reasoning: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'DeepSeek-R1-Distill-Llama-70B是DeepSeek-R1基于Llama3.3-70B-Instruct的蒸馏模型。',
+    description: 'DeepSeek-R1-Distill-Llama-70B是DeepSeek-R1基于Llama3.3-70B-Instruct的蒸馏模型。',
     displayName: 'DeepSeek R1 Distill Llama 70B',
     id: 'deepseek-r1-distill-llama-70b',
     pricing: {
