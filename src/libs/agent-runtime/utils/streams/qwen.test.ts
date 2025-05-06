@@ -365,7 +365,7 @@ describe('transformQwenStream', () => {
         prompt_tokens: 100,
         total_tokens: 150,
         completion_tokens_details: {}, // Ensure these exist even if empty
-        prompt_tokens_details: {},     // Ensure these exist even if empty
+        prompt_tokens_details: {}, // Ensure these exist even if empty
       },
     };
 
