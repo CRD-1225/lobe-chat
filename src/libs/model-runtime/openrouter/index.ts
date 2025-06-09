@@ -1,3 +1,4 @@
+import OpenRouterModels from '@/config/aiModels/openrouter';
 import type { ChatModelCard } from '@/types/llm';
 
 import { ModelProvider } from '../types';
@@ -14,12 +15,27 @@ export const LobeOpenRouterAI = createOpenAICompatibleRuntime({
   baseURL: 'https://openrouter.ai/api/v1',
   chatCompletion: {
     handlePayload: (payload) => {
-      const { thinking } = payload;
+      const { thinking, model, max_tokens } = payload;
 
       let reasoning: OpenRouterReasoning = {};
+
       if (thinking?.type === 'enabled') {
+        const modelConfig = OpenRouterModels.find((m) => m.id === model);
+        const defaultMaxOutput = modelConfig?.maxOutput;
+
+        // 配置优先级：用户设置 > 模型配置 > 硬编码默认值
+        const getMaxTokens = () => {
+          if (max_tokens) return max_tokens;
+          if (defaultMaxOutput) return defaultMaxOutput;
+          return undefined;
+        };
+
+        const maxTokens = getMaxTokens() || 32_000; // Claude Opus 4 has minimum maxOutput
+
         reasoning = {
-          max_tokens: thinking.budget_tokens,
+          max_tokens: thinking?.budget_tokens
+            ? Math.min(thinking.budget_tokens, maxTokens - 1)
+            : 1024,
         };
       }
 

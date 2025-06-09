@@ -336,6 +336,7 @@ const OpenAI: ModelProviderCard = {
     smoothing: {
       text: true,
     },
+    supportResponsesApi: true,
   },
   url: 'https://openai.com',
 };
